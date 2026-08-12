@@ -4,10 +4,12 @@
   "file_type": "pdf",
   "sha256": "4e8538222f8b33292e0c523e62bb8dc40d7fd1a02b4faa5ff58210dfd06e8b0d",
   "text_sha256": "f42593f8437a17a8ca9eaa7408fe751c6431ce378b3513b91b94e2f6da797f2c",
-  "downloaded_at": "2026-08-12T11:47:00.396002+00:00",
+  "downloaded_at": "2026-08-12T19:40:23.612779+00:00",
   "authority": "RBI",
   "source_type": "regulatory",
+  "document_scope": "general_regulation",
   "priority": 1,
+  "product": null,
   "topics": [
     "interest_rate",
     "advances",
@@ -16,9 +18,17 @@
     "lending_rate"
   ],
   "document_date": "2016-03-03",
-  "last_updated": "2025-10-01",
+  "last_updated": null,
   "effective_from": "2016-03-03",
   "effective_until": null,
+  "applicability_from": "2016-03-03",
+  "implementation_extension_date": null,
+  "applicability": [
+    "all_commercial_banks"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "special_effective_dates": {},
   "status": "active",
   "source_origin": "live_fetch"
 }

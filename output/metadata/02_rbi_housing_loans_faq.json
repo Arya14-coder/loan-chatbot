@@ -2,12 +2,14 @@
   "url": "https://rbi.org.in/CommonPerson/english/scripts/FAQs.aspx?Id=701",
   "label": "02_rbi_housing_loans_faq",
   "file_type": "html",
-  "sha256": "c359431e1acab4e26cb985b825ff9b9c04d37b41a70749299a35f7d2b47afb2a",
-  "text_sha256": "c423694469fa1dbbdd9696c450e14823820b9807cd8860b47558a6147fb83b79",
-  "downloaded_at": "2026-08-12T11:46:57.634428+00:00",
+  "sha256": "c49b9641d978fcde86d7a060b2a4c06a034180412e18ff07c7a430dc6d38ac0a",
+  "text_sha256": "b455d2da1b05ee88206c90ea1b0d08b800733dfd250706a4db4e7515908f5804",
+  "downloaded_at": "2026-08-12T19:40:14.259340+00:00",
   "authority": "RBI",
   "source_type": "consumer_guidance",
+  "document_scope": "consumer_guidance",
   "priority": 2,
+  "product": "home_loan",
   "topics": [
     "home_loan",
     "housing_loan",
@@ -23,6 +25,12 @@
   "last_updated": null,
   "effective_from": null,
   "effective_until": null,
+  "applicability_from": null,
+  "implementation_extension_date": null,
+  "applicability": [],
+  "supersedes": [],
+  "superseded_by": [],
+  "special_effective_dates": {},
   "status": "active",
-  "source_origin": "live_fetch"
+  "source_origin": "manual_override"
 }

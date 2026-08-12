@@ -2,23 +2,36 @@
   "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12535&Mode=0",
   "label": "07_property_document_release_circular",
   "file_type": "html",
-  "sha256": "467cc32080d79ba15d078d08f990f07c5ab810741bace232217a92b7dd74dfad",
-  "text_sha256": "17256fc0bd1d70eea337a9e78b64d4d8a5e11ed7573cadedca8d03db6ceaea9c",
-  "downloaded_at": "2026-08-12T11:47:07.913247+00:00",
+  "sha256": "1e4344b4aefa9251896c74c592c7c9fa34b8985e8bb3b5e0e1589261a7c15c63",
+  "text_sha256": "6e5390a99c6063662fe7ccd69a123ec1b46e9db8a516fc7c752536c25d7d0033",
+  "downloaded_at": "2026-08-12T19:40:25.476079+00:00",
   "authority": "RBI",
   "source_type": "regulatory",
+  "document_scope": "general_regulation",
   "priority": 1,
+  "product": null,
   "topics": [
     "property_documents",
     "loan_closure",
     "collateral",
     "release_of_documents",
-    "compensation"
+    "compensation",
+    "30_day_timeline"
   ],
   "document_date": "2023-09-13",
   "last_updated": null,
   "effective_from": "2023-12-01",
   "effective_until": null,
+  "applicability_from": "2023-12-01",
+  "implementation_extension_date": null,
+  "applicability": [
+    "all_commercial_banks",
+    "nbfcs",
+    "hfcs"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "special_effective_dates": {},
   "status": "active",
-  "source_origin": "live_fetch"
+  "source_origin": "manual_override"
 }

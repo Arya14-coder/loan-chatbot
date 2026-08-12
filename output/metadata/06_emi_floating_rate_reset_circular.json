@@ -2,12 +2,14 @@
   "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12529",
   "label": "06_emi_floating_rate_reset_circular",
   "file_type": "html",
-  "sha256": "4f181bf8f23634eaf6c4dbb1bdd4bc25cdd55c62366ac9341d287804f7c30150",
-  "text_sha256": "73af8625cb618bc0b9189ff31f2231a8b2c2abf76a4e5f11c43b1864d458cddd",
-  "downloaded_at": "2026-08-12T11:47:07.291382+00:00",
+  "sha256": "ec4870b23436625abb858e43c81f4b710e359db78f846efacdde04382fade78e",
+  "text_sha256": "005fa1ba720f96e32c0ef8b7f95853af863b42a067c38f6dc0c03b069e85f368",
+  "downloaded_at": "2026-08-12T19:40:25.444194+00:00",
   "authority": "RBI",
   "source_type": "regulatory",
+  "document_scope": "general_regulation",
   "priority": 1,
+  "product": null,
   "topics": [
     "EMI",
     "floating_rate",
@@ -16,9 +18,19 @@
     "fixed_rate_switch"
   ],
   "document_date": "2023-08-18",
-  "last_updated": "2025-10-01",
+  "last_updated": null,
   "effective_from": "2023-08-18",
   "effective_until": null,
+  "applicability_from": "2023-12-31",
+  "implementation_extension_date": null,
+  "applicability": [
+    "all_commercial_banks",
+    "nbfcs",
+    "hfcs"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "special_effective_dates": {},
   "status": "active",
-  "source_origin": "live_fetch"
+  "source_origin": "manual_override"
 }
