@@ -1,0 +1,22 @@
+{
+  "url": "https://www.indiacode.nic.in/bitstream/123456789/1885/1/aa1949-10.pdf",
+  "label": "09_banking_regulation_act_1949",
+  "file_type": "pdf",
+  "sha256": "274023aef3d2e7dd4195096ccaf99853955220d07a3445106a1584ca62375fda",
+  "text_sha256": "9fa1899e55b0e271cba3f173a23fdd6dac0ae404356de2e1100580b3f226a449",
+  "downloaded_at": "2026-08-12T06:34:28.393448+00:00",
+  "authority": "Government of India",
+  "source_type": "statute",
+  "priority": 1,
+  "topics": [
+    "banking_regulation",
+    "banking_law",
+    "banking_act",
+    "regulated_entities"
+  ],
+  "document_date": null,
+  "last_updated": null,
+  "effective_from": null,
+  "effective_until": null,
+  "status": "active"
+}

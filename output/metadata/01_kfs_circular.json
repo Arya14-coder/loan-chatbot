@@ -1,0 +1,23 @@
+{
+  "url": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/CIRCULARKFS1504242AE2500BAF494C2A82442B0B642705C1.PDF",
+  "label": "01_kfs_circular",
+  "file_type": "pdf",
+  "sha256": "0a9761e2624f0b912699ed1cde33bc660dce4da429ffdd36723363b8be2e4d86",
+  "text_sha256": "0dd80e5a2ce0c361efb679f437598a3fe434aeddba9d181fc31b481cb405c2a4",
+  "downloaded_at": "2026-08-12T06:34:06.080610+00:00",
+  "authority": "RBI",
+  "source_type": "regulatory",
+  "priority": 1,
+  "topics": [
+    "KFS",
+    "APR",
+    "fees",
+    "repayment",
+    "loan_cost"
+  ],
+  "document_date": "2024-04-15",
+  "last_updated": null,
+  "effective_from": "2024-10-01",
+  "effective_until": null,
+  "status": "active"
+}

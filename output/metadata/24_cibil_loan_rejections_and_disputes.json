@@ -1,0 +1,22 @@
+{
+  "url": "https://www.cibil.com/faq/loan-rejections-disputes",
+  "label": "24_cibil_loan_rejections_and_disputes",
+  "file_type": "html",
+  "sha256": "60f5c355f60e3edde1271d5b85b03c8efc269820c0f263e8fd97d25efb776d31",
+  "text_sha256": "5e4af1b553cd5e310cd35dc6ddf553dbfc1b885ece934f67f7114f300d07d1ca",
+  "downloaded_at": "2026-08-12T06:55:38.215180+00:00",
+  "authority": "TransUnion CIBIL",
+  "source_type": "consumer_education",
+  "priority": 3,
+  "topics": [
+    "loan_rejection",
+    "credit_report",
+    "disputes",
+    "creditworthiness"
+  ],
+  "document_date": null,
+  "last_updated": null,
+  "effective_from": null,
+  "effective_until": null,
+  "status": "reference"
+}

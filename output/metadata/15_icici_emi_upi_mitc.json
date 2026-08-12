@@ -1,0 +1,26 @@
+{
+  "url": "https://www.icici.bank.in/personal-banking/loans/smart-loan/most-important-terms-and-conditions",
+  "label": "15_icici_emi_upi_mitc",
+  "file_type": "html",
+  "sha256": "7681fcc4ae527f7c0f638f11cf7a3d816e9ac016ab5baca3eaf0a8d86af60b27",
+  "text_sha256": "7ab573db00939162adfa9328073e55c58696774b2bab6d6f1ca606b464370680",
+  "downloaded_at": "2026-08-12T06:34:31.445220+00:00",
+  "authority": "ICICI Bank",
+  "source_type": "bank_product_terms",
+  "priority": 3,
+  "topics": [
+    "MITC",
+    "EMI",
+    "charges",
+    "interest_rate",
+    "default",
+    "credit_bureau_reporting",
+    "grievance_redressal",
+    "compensation_policy"
+  ],
+  "document_date": null,
+  "last_updated": null,
+  "effective_from": null,
+  "effective_until": null,
+  "status": "reference"
+}

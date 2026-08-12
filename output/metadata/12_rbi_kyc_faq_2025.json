@@ -1,0 +1,23 @@
+{
+  "url": "https://www.rbi.org.in/commonperson/english/scripts/FAQs.aspx?Id=3782",
+  "label": "12_rbi_kyc_faq_2025",
+  "file_type": "html",
+  "sha256": "15e7238bc19617005ffdbb7a3e8c3583b094575aef7efddfb399422766c0f9e4",
+  "text_sha256": "896f9360f8bc156ba0099bab22f2ca4b4fd69746fd69b90be428573450e4ecc5",
+  "downloaded_at": "2026-08-12T06:34:30.065941+00:00",
+  "authority": "RBI",
+  "source_type": "consumer_guidance",
+  "priority": 2,
+  "topics": [
+    "KYC",
+    "identity",
+    "documents",
+    "customer_due_diligence",
+    "account_update"
+  ],
+  "document_date": "2025-06-09",
+  "last_updated": null,
+  "effective_from": null,
+  "effective_until": null,
+  "status": "active"
+}

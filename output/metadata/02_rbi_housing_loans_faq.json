@@ -1,0 +1,27 @@
+{
+  "url": "https://rbi.org.in/CommonPerson/english/scripts/FAQs.aspx?Id=701",
+  "label": "02_rbi_housing_loans_faq",
+  "file_type": "html",
+  "sha256": "aab36dd7a9e0a59645afaeed82620c7a14e7553db2fc3ae3de442aa64c354579",
+  "text_sha256": "896f9360f8bc156ba0099bab22f2ca4b4fd69746fd69b90be428573450e4ecc5",
+  "downloaded_at": "2026-08-12T06:34:06.606779+00:00",
+  "authority": "RBI",
+  "source_type": "consumer_guidance",
+  "priority": 2,
+  "topics": [
+    "home_loan",
+    "housing_loan",
+    "MITC",
+    "loan_terms",
+    "prepayment",
+    "interest_rate",
+    "offer_letter",
+    "borrower_rights",
+    "reverse_mortgage"
+  ],
+  "document_date": "2009-11-10",
+  "last_updated": null,
+  "effective_from": null,
+  "effective_until": null,
+  "status": "active"
+}

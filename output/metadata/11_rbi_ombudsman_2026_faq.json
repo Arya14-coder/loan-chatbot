@@ -1,0 +1,24 @@
+{
+  "url": "https://www.rbi.org.in/commonperson/english/scripts/FAQs.aspx?Id=3407",
+  "label": "11_rbi_ombudsman_2026_faq",
+  "file_type": "html",
+  "sha256": "0719e117811937efad04abb82b54471cb78b4513ed0bdb20203a6c56c3dc65b3",
+  "text_sha256": "896f9360f8bc156ba0099bab22f2ca4b4fd69746fd69b90be428573450e4ecc5",
+  "downloaded_at": "2026-08-12T06:34:29.183169+00:00",
+  "authority": "RBI",
+  "source_type": "consumer_guidance",
+  "priority": 2,
+  "topics": [
+    "complaints",
+    "grievance",
+    "ombudsman",
+    "consumer_protection",
+    "bank_complaints",
+    "NBFC_complaints"
+  ],
+  "document_date": "2026-07-01",
+  "last_updated": null,
+  "effective_from": "2026-07-01",
+  "effective_until": null,
+  "status": "active"
+}

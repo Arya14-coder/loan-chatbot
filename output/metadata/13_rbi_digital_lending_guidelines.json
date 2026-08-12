@@ -1,0 +1,25 @@
+{
+  "url": "https://www.rbi.org.in/commonperson/english/scripts/FAQs.aspx?Id=3547",
+  "label": "13_rbi_digital_lending_guidelines",
+  "file_type": "html",
+  "sha256": "ab76eb5968ec9cc270f9b8e87a9368e79e44441049c6a4da8d07170ce5dfb580",
+  "text_sha256": "896f9360f8bc156ba0099bab22f2ca4b4fd69746fd69b90be428573450e4ecc5",
+  "downloaded_at": "2026-08-12T06:34:30.512878+00:00",
+  "authority": "RBI",
+  "source_type": "regulatory_guidance",
+  "priority": 2,
+  "topics": [
+    "digital_lending",
+    "online_loans",
+    "LSP",
+    "lending_service_provider",
+    "KFS",
+    "APR",
+    "borrower_protection"
+  ],
+  "document_date": "2023-02-14",
+  "last_updated": null,
+  "effective_from": null,
+  "effective_until": null,
+  "status": "reference"
+}

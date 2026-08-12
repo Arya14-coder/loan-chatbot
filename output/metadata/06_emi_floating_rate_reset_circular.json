@@ -1,0 +1,23 @@
+{
+  "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12529",
+  "label": "06_emi_floating_rate_reset_circular",
+  "file_type": "html",
+  "sha256": "3230007c33597692b4c37a621afd4923be8e4cef733c0f119503086ae9b01588",
+  "text_sha256": "9eee8981a3cf39c5ae368fc21d87ddd5afe515159ed637df7491d6d97a12864b",
+  "downloaded_at": "2026-08-12T06:34:15.863721+00:00",
+  "authority": "RBI",
+  "source_type": "regulatory",
+  "priority": 1,
+  "topics": [
+    "EMI",
+    "floating_rate",
+    "interest_reset",
+    "personal_loans",
+    "fixed_rate_switch"
+  ],
+  "document_date": "2023-08-18",
+  "last_updated": "2025-10-01",
+  "effective_from": "2023-08-18",
+  "effective_until": null,
+  "status": "active"
+}

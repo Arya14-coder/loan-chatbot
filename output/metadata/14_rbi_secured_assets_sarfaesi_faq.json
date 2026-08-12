@@ -1,0 +1,23 @@
+{
+  "url": "https://www.rbi.org.in/commonperson/english/scripts/FAQs.aspx?Id=3572",
+  "label": "14_rbi_secured_assets_sarfaesi_faq",
+  "file_type": "html",
+  "sha256": "cdc9b517b7c984abb4f1bf15858c6bf499b87ccdd03c82688ada481f49185a66",
+  "text_sha256": "896f9360f8bc156ba0099bab22f2ca4b4fd69746fd69b90be428573450e4ecc5",
+  "downloaded_at": "2026-08-12T06:34:31.003844+00:00",
+  "authority": "RBI",
+  "source_type": "consumer_guidance",
+  "priority": 2,
+  "topics": [
+    "secured_loan",
+    "collateral",
+    "SARFAESI",
+    "secured_assets",
+    "default"
+  ],
+  "document_date": "2024-02-06",
+  "last_updated": null,
+  "effective_from": null,
+  "effective_until": null,
+  "status": "reference"
+}
