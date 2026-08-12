@@ -4,7 +4,7 @@
   "file_type": "pdf",
   "sha256": "d28ea27d6f195111f1104742f05e9940b167db6c2b13c63782e0fd13daa5d87a",
   "text_sha256": "6644818852e105302a6926b0b4cca50cc41b069321199900a0f57725dc710844",
-  "downloaded_at": "2026-08-12T06:34:32.187029+00:00",
+  "downloaded_at": "2026-08-12T11:47:23.400829+00:00",
   "authority": "HDFC Bank",
   "source_type": "bank_product_terms",
   "priority": 4,
@@ -21,5 +21,6 @@
   "last_updated": null,
   "effective_from": null,
   "effective_until": null,
-  "status": "reference"
+  "status": "reference",
+  "source_origin": "live_fetch"
 }

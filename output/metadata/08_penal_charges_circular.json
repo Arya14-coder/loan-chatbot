@@ -2,9 +2,9 @@
   "url": "https://rbi.org.in/Scripts/NotificationUser.aspx?Id=12527&Mode=0",
   "label": "08_penal_charges_circular",
   "file_type": "html",
-  "sha256": "9c0bd5bfa794f4a5bdb4c06d0ca584a11ee3648faba616d41521444709d99810",
-  "text_sha256": "9eee8981a3cf39c5ae368fc21d87ddd5afe515159ed637df7491d6d97a12864b",
-  "downloaded_at": "2026-08-12T06:34:17.414591+00:00",
+  "sha256": "bf5257db404d6b907cae94760b4ded02919cb5aaecec4933b9e0bb5c72fdbe84",
+  "text_sha256": "0e4f3874e7d7fee7b4f34a57504b91f5508e9788ba14a4a2dd7ee372a8a51133",
+  "downloaded_at": "2026-08-12T11:47:08.432288+00:00",
   "authority": "RBI",
   "source_type": "regulatory",
   "priority": 1,
@@ -19,5 +19,6 @@
   "last_updated": "2023-12-29",
   "effective_from": "2024-04-01",
   "effective_until": null,
-  "status": "active"
+  "status": "active",
+  "source_origin": "live_fetch"
 }

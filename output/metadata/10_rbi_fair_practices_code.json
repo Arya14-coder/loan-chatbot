@@ -2,9 +2,9 @@
   "url": "https://www.rbi.org.in/commonman/english/scripts/Notification.aspx?Id=1572",
   "label": "10_rbi_fair_practices_code",
   "file_type": "html",
-  "sha256": "b44308a29e0740a7f242cc51efe6bf14357e485b98a4eedce20a439e43ee4e4c",
-  "text_sha256": "896f9360f8bc156ba0099bab22f2ca4b4fd69746fd69b90be428573450e4ecc5",
-  "downloaded_at": "2026-08-12T06:34:28.813415+00:00",
+  "sha256": "e08940d339123ea18eaf9fd0d5a9a1c3a88a3a81d349457422aab3e31c1d4c3a",
+  "text_sha256": "ebf9237116502512104772aad406cbb97fc1ed4b08ff82a7ef6eef1d3e9e5f98",
+  "downloaded_at": "2026-08-12T11:47:21.809068+00:00",
   "authority": "RBI",
   "source_type": "consumer_regulatory",
   "priority": 2,
@@ -19,5 +19,6 @@
   "last_updated": null,
   "effective_from": null,
   "effective_until": null,
-  "status": "historical_reference"
+  "status": "historical_reference",
+  "source_origin": "live_fetch"
 }

@@ -2,9 +2,9 @@
   "url": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12878&Mode=0",
   "label": "03_prepayment_charges_directions_2025",
   "file_type": "html",
-  "sha256": "8b89b4569d5a762de8ae8104837dae0b0aa896708c04ffe8cadc2b6ddc4fd694",
-  "text_sha256": "9eee8981a3cf39c5ae368fc21d87ddd5afe515159ed637df7491d6d97a12864b",
-  "downloaded_at": "2026-08-12T06:34:07.248310+00:00",
+  "sha256": "8cb880cfab73425e12225ab46e1ae0120f953c61cc588c457b0f578f3d6f0942",
+  "text_sha256": "d9d4b740e4db363863ded59a158a9ce0645d676522d4a1ec364c26c8b1584e05",
+  "downloaded_at": "2026-08-12T11:46:58.223044+00:00",
   "authority": "RBI",
   "source_type": "regulatory",
   "priority": 1,
@@ -18,5 +18,6 @@
   "last_updated": null,
   "effective_from": "2026-01-01",
   "effective_until": null,
-  "status": "active"
+  "status": "active",
+  "source_origin": "live_fetch"
 }

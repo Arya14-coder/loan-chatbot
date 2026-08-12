@@ -2,9 +2,9 @@
   "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12535&Mode=0",
   "label": "07_property_document_release_circular",
   "file_type": "html",
-  "sha256": "e3b81baa63eae68e54870dfc08029f6bbcf57c3ee779eca02145633f8d834018",
-  "text_sha256": "9eee8981a3cf39c5ae368fc21d87ddd5afe515159ed637df7491d6d97a12864b",
-  "downloaded_at": "2026-08-12T06:34:16.652360+00:00",
+  "sha256": "467cc32080d79ba15d078d08f990f07c5ab810741bace232217a92b7dd74dfad",
+  "text_sha256": "17256fc0bd1d70eea337a9e78b64d4d8a5e11ed7573cadedca8d03db6ceaea9c",
+  "downloaded_at": "2026-08-12T11:47:07.913247+00:00",
   "authority": "RBI",
   "source_type": "regulatory",
   "priority": 1,
@@ -19,5 +19,6 @@
   "last_updated": null,
   "effective_from": "2023-12-01",
   "effective_until": null,
-  "status": "active"
+  "status": "active",
+  "source_origin": "live_fetch"
 }

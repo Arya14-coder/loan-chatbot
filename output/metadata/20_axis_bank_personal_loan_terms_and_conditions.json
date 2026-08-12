@@ -4,7 +4,7 @@
   "file_type": "pdf",
   "sha256": "55e40b1b53a03702c777c609ea4fa16e3fe92a0a21c47951e549caeb50fcd0ec",
   "text_sha256": "e2dd6c6472a270b52ce97c92d0c97c63c95935981a84745edab34b73af6faec6",
-  "downloaded_at": "2026-08-12T06:34:35.844886+00:00",
+  "downloaded_at": "2026-08-12T11:47:26.344328+00:00",
   "authority": "Axis Bank",
   "source_type": "bank_product_terms",
   "priority": 4,
@@ -25,5 +25,6 @@
   "last_updated": null,
   "effective_from": null,
   "effective_until": null,
-  "status": "reference"
+  "status": "reference",
+  "source_origin": "live_fetch"
 }

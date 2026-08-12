@@ -2,9 +2,9 @@
   "url": "https://www.rbi.org.in/commonperson/english/scripts/FAQs.aspx?Id=3547",
   "label": "13_rbi_digital_lending_guidelines",
   "file_type": "html",
-  "sha256": "ab76eb5968ec9cc270f9b8e87a9368e79e44441049c6a4da8d07170ce5dfb580",
-  "text_sha256": "896f9360f8bc156ba0099bab22f2ca4b4fd69746fd69b90be428573450e4ecc5",
-  "downloaded_at": "2026-08-12T06:34:30.512878+00:00",
+  "sha256": "35b91f971a07adb38e54c34e344460e36859bf9db24552e4099390ab1b576d53",
+  "text_sha256": "3510e0b58850a30ea7f071b49b62806a86ecb7c091c2d865d7bb7309914fed5f",
+  "downloaded_at": "2026-08-12T11:47:22.355575+00:00",
   "authority": "RBI",
   "source_type": "regulatory_guidance",
   "priority": 2,
@@ -21,5 +21,6 @@
   "last_updated": null,
   "effective_from": null,
   "effective_until": null,
-  "status": "reference"
+  "status": "reference",
+  "source_origin": "live_fetch"
 }

@@ -104,7 +104,7 @@ def extract_html_text(html_content: str) -> str:
     soup = BeautifulSoup(html_content, "html.parser")
     unwanted_tags = [
         "script", "style", "nav", "header", "footer",
-        "aside", "form", "noscript", "iframe", "svg"
+        "aside", "noscript", "iframe", "svg"
     ]
     for tag in soup(unwanted_tags):
         tag.decompose()
@@ -312,29 +312,3 @@ if __name__ == "__main__":
     main()
 
 
-# ==============================================================================
-# ONE-TIME SETUP NOTE
-# ==============================================================================
-# This script compares against a "text_sha256" field in each source's
-# output/metadata/<label>.json file. Your current download_and_extract.py
-# stores a raw-content hash under the key "sha256" (computed from the raw
-# downloaded bytes, before text extraction) — that's fine for its own
-# purpose (skip re-processing unchanged downloads), but it's not the same
-# value this script needs for text-based drift detection.
-#
-# To keep both in sync going forward, add ONE line to download_and_extract.py,
-# inside process_url(), right after `extracted_text` is computed and before
-# the metadata dict is built:
-#
-#     metadata = {
-#         "url": url,
-#         "label": label,
-#         "file_type": doc_type,
-#         "sha256": content_hash,
-#         "text_sha256": hashlib.sha256(extracted_text.encode("utf-8")).hexdigest(),  # <-- add this line
-#         "downloaded_at": datetime.now(timezone.utc).isoformat()
-#     }
-#
-# Until that line is added and download_and_extract.py --force is re-run
-# once, every source will show as "new" here (no text_sha256 to compare
-# against yet) rather than a false "changed" — that's the safe default.

@@ -329,7 +329,7 @@ URL_CONFIG = [
         "type": "html",
         "authority": "ICICI Bank",
         "source_type": "bank_product_terms",
-        "priority": 3,
+        "priority": 4,
         "topics": [
             "MITC",
             "EMI",

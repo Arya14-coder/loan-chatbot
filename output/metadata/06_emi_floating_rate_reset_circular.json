@@ -2,9 +2,9 @@
   "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12529",
   "label": "06_emi_floating_rate_reset_circular",
   "file_type": "html",
-  "sha256": "3230007c33597692b4c37a621afd4923be8e4cef733c0f119503086ae9b01588",
-  "text_sha256": "9eee8981a3cf39c5ae368fc21d87ddd5afe515159ed637df7491d6d97a12864b",
-  "downloaded_at": "2026-08-12T06:34:15.863721+00:00",
+  "sha256": "4f181bf8f23634eaf6c4dbb1bdd4bc25cdd55c62366ac9341d287804f7c30150",
+  "text_sha256": "73af8625cb618bc0b9189ff31f2231a8b2c2abf76a4e5f11c43b1864d458cddd",
+  "downloaded_at": "2026-08-12T11:47:07.291382+00:00",
   "authority": "RBI",
   "source_type": "regulatory",
   "priority": 1,
@@ -19,5 +19,6 @@
   "last_updated": "2025-10-01",
   "effective_from": "2023-08-18",
   "effective_until": null,
-  "status": "active"
+  "status": "active",
+  "source_origin": "live_fetch"
 }

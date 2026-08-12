@@ -2,9 +2,9 @@
   "url": "https://www.rbi.org.in/commonperson/english/scripts/FAQs.aspx?Id=3782",
   "label": "12_rbi_kyc_faq_2025",
   "file_type": "html",
-  "sha256": "15e7238bc19617005ffdbb7a3e8c3583b094575aef7efddfb399422766c0f9e4",
-  "text_sha256": "896f9360f8bc156ba0099bab22f2ca4b4fd69746fd69b90be428573450e4ecc5",
-  "downloaded_at": "2026-08-12T06:34:30.065941+00:00",
+  "sha256": "1f840986e94ffd5a791193f21387fef918c613c1ef5e1cfe4183696e9e9c1564",
+  "text_sha256": "93ecb6fbcc2ef8fec9ee90802901f74c9da2aa19610fac013cee7c1179b77698",
+  "downloaded_at": "2026-08-12T11:47:22.194296+00:00",
   "authority": "RBI",
   "source_type": "consumer_guidance",
   "priority": 2,
@@ -19,5 +19,6 @@
   "last_updated": null,
   "effective_from": null,
   "effective_until": null,
-  "status": "active"
+  "status": "active",
+  "source_origin": "live_fetch"
 }

@@ -783,9 +783,12 @@ def extract_html_text(html_content: str) -> str:
     soup = BeautifulSoup(html_content, "html.parser")
 
     # List of HTML tags to strip out completely
+    # Note: 'form' is intentionally NOT included here because ASP.NET (.aspx)
+    # websites (like RBI's portal) wrap the entire page body inside <form id="form1">.
+    # Decomposing 'form' would strip out 100% of the actual page text.
     unwanted_tags = [
         "script", "style", "nav", "header", "footer", 
-        "aside", "form", "noscript", "iframe", "svg"
+        "aside", "noscript", "iframe", "svg"
     ]
     for tag in soup(unwanted_tags):
         tag.decompose()
@@ -817,14 +820,34 @@ def process_url(item: dict, force: bool) -> str:
     processed_txt_path = PROCESSED_DIR / f"{label}.txt"
     metadata_json_path = METADATA_DIR / f"{label}.json"
 
-    # Check if document already exists in output (unless force=True)
+    # Check for manual override file in MANUAL_DIR (support pdf, html, htm, txt)
+    manual_file = None
+    possible_extensions = [f".{doc_type}", ".html", ".htm", ".pdf", ".txt"]
+    for ext in possible_extensions:
+        candidate = MANUAL_DIR / f"{label}{ext}"
+        if candidate.exists():
+            manual_file = candidate
+            break
+
+    # Check if document already exists in output (unless force=True or manual override exists)
     if not force:
         already_in_output = (
             processed_txt_path.exists() and
             metadata_json_path.exists() and
             (doc_type != "pdf" or raw_pdf_path.exists())
         )
-        if already_in_output:
+        manual_is_newer_or_replacing = False
+        if manual_file and processed_txt_path.exists():
+            try:
+                # Re-process if manual file is newer than processed txt or if processed txt is essentially empty (< 100 bytes)
+                manual_is_newer_or_replacing = (
+                    manual_file.stat().st_mtime > processed_txt_path.stat().st_mtime
+                    or processed_txt_path.stat().st_size < 100
+                )
+            except Exception:
+                manual_is_newer_or_replacing = True
+
+        if already_in_output and not manual_is_newer_or_replacing:
             print(f"[SKIPPED] '{label}' - Already exists in output.")
             return "skipped"
 
@@ -836,43 +859,34 @@ def process_url(item: dict, force: bool) -> str:
         "Connection": "keep-alive",
     }
 
-    # Manual-fallback path: if a site's bot-protection blocks scripted
-    # requests outright (common WAFs like Akamai/Cloudflare won't pass a
-    # plain `requests` call no matter how good the headers are — they check
-    # things like JS execution or TLS fingerprint that this script can't
-    # replicate), you can manually download the file yourself in a real
-    # browser and drop it here. If the live fetch below fails, the script
-    # checks this folder before giving up.
-    manual_pdf_path = MANUAL_DIR / f"{label}.pdf"
-    manual_html_path = MANUAL_DIR / f"{label}.html"
+    content_bytes = None
+    used_manual_fallback = False
 
-    # Fetch document content from URL (one retry after a longer pause on
-    # 403/429/503, since some blocks are just rate-limiting)
-    try:
-        response = requests.get(url, headers=headers, timeout=30)
-        if response.status_code in (403, 429, 503):
-            time.sleep(RETRY_DELAY_SECONDS)
+    # PRIORITIZE MANUAL FILE IF PRESENT
+    if manual_file and manual_file.exists():
+        with open(manual_file, "rb") as f:
+            content_bytes = f.read()
+        used_manual_fallback = True
+        print(f"[MANUAL OVERRIDE] '{label}' - using manual file: output/manual/{manual_file.name}")
+    else:
+        # Fetch document content from URL (one retry after a longer pause on 403/429/503)
+        try:
             response = requests.get(url, headers=headers, timeout=30)
-        response.raise_for_status()
-        content_bytes = response.content
-        used_manual_fallback = False
-    except Exception as live_fetch_error:
-        # Live fetch failed even after retry — check for a manually placed
-        # file before giving up entirely.
-        manual_path = manual_pdf_path if doc_type == "pdf" else manual_html_path
-        if manual_path.exists():
-            with open(manual_path, "rb") as f:
-                content_bytes = f.read()
-            used_manual_fallback = True
-            print(f"[MANUAL FALLBACK] '{label}' - using manually saved file (live fetch failed: {live_fetch_error})")
-        else:
-            raise
+            if response.status_code in (403, 429, 503):
+                time.sleep(RETRY_DELAY_SECONDS)
+                response = requests.get(url, headers=headers, timeout=30)
+            response.raise_for_status()
+            content_bytes = response.content
+        except Exception as live_fetch_error:
+            raise RuntimeError(f"Live fetch failed ({live_fetch_error}) and no manual file found in output/manual/")
 
-    # Calculate SHA256 hash of downloaded content
+    # Calculate SHA256 hash of document content
     content_hash = hashlib.sha256(content_bytes).hexdigest()
 
-    # Process document according to type
-    if doc_type == "pdf":
+    # Determine processing path (PDF vs HTML)
+    is_pdf = (doc_type == "pdf") or (manual_file and manual_file.suffix.lower() == ".pdf")
+
+    if is_pdf:
         # Save raw PDF file to output/raw/
         with open(raw_pdf_path, "wb") as f:
             f.write(content_bytes)
@@ -880,10 +894,8 @@ def process_url(item: dict, force: bool) -> str:
         # Extract text from PDF
         extracted_text = extract_pdf_text(raw_pdf_path)
 
-    elif doc_type == "html":
-        # Decode HTML text and clean structure. If we used the manual
-        # fallback file, decode the raw bytes ourselves (no `response`
-        # object exists in that path); otherwise use requests' own decoding.
+    else:
+        # Decode HTML text and clean structure.
         if used_manual_fallback:
             html_str = content_bytes.decode("utf-8", errors="replace")
         else:
@@ -895,10 +907,6 @@ def process_url(item: dict, force: bool) -> str:
         f.write(extracted_text)
 
     # Save JSON metadata to output/metadata/
-    # Everything beyond the core download-tracking fields (sha256,
-    # text_sha256, downloaded_at) is pulled straight from URL_CONFIG via
-    # .get(), so this stays in sync automatically if you add/remove fields
-    # in url_config_final.py — no need to edit this block for that.
     metadata = {
         "url": url,
         "label": label,
@@ -906,7 +914,6 @@ def process_url(item: dict, force: bool) -> str:
         "sha256": content_hash,
         "text_sha256": hashlib.sha256(extracted_text.encode("utf-8")).hexdigest(),
         "downloaded_at": datetime.now(timezone.utc).isoformat(),
-        # --- corpus metadata, carried through from URL_CONFIG ---
         "authority": item.get("authority"),
         "source_type": item.get("source_type"),
         "priority": item.get("priority"),
@@ -916,11 +923,13 @@ def process_url(item: dict, force: bool) -> str:
         "effective_from": item.get("effective_from"),
         "effective_until": item.get("effective_until"),
         "status": item.get("status"),
+        "source_origin": "manual_override" if used_manual_fallback else "live_fetch",
     }
     with open(metadata_json_path, "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=2)
 
-    print(f"[DOWNLOADED] '{label}' successfully processed.")
+    status_tag = "[MANUAL PROCESSED]" if used_manual_fallback else "[DOWNLOADED]"
+    print(f"{status_tag} '{label}' successfully processed ({len(extracted_text)} chars extracted).")
     return "downloaded"
 
 

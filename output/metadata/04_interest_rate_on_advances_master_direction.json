@@ -4,7 +4,7 @@
   "file_type": "pdf",
   "sha256": "4e8538222f8b33292e0c523e62bb8dc40d7fd1a02b4faa5ff58210dfd06e8b0d",
   "text_sha256": "f42593f8437a17a8ca9eaa7408fe751c6431ce378b3513b91b94e2f6da797f2c",
-  "downloaded_at": "2026-08-12T06:34:09.079484+00:00",
+  "downloaded_at": "2026-08-12T11:47:00.396002+00:00",
   "authority": "RBI",
   "source_type": "regulatory",
   "priority": 1,
@@ -19,5 +19,6 @@
   "last_updated": "2025-10-01",
   "effective_from": "2016-03-03",
   "effective_until": null,
-  "status": "active"
+  "status": "active",
+  "source_origin": "live_fetch"
 }

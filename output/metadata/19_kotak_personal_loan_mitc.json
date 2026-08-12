@@ -4,7 +4,7 @@
   "file_type": "pdf",
   "sha256": "05cbe7a09a5a6435d0067f941e7f98dcd51bc9b99f4f14b611f68e55cbbd4840",
   "text_sha256": "7e244d5b4092433086932bea77a5e7000d39f3d15235824c07350dd99065f780",
-  "downloaded_at": "2026-08-12T06:34:34.498806+00:00",
+  "downloaded_at": "2026-08-12T11:47:25.054280+00:00",
   "authority": "Kotak Mahindra Bank",
   "source_type": "bank_product_terms",
   "priority": 4,
@@ -22,5 +22,6 @@
   "last_updated": null,
   "effective_from": null,
   "effective_until": null,
-  "status": "reference"
+  "status": "reference",
+  "source_origin": "live_fetch"
 }
